@@ -1,0 +1,548 @@
+@font-face {
+    font-family: Flood;
+    src: url("../fonts/Flood\ Std\ Regular.otf") format("opentype");
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/************************* HEADER **************************/
+
+.main-header {
+    display: grid;
+    grid-template-areas: "head nav"
+                         "button button";
+    margin: 1rem 2rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.main-header__head {
+    grid-area: head;
+}
+
+.main-header__brand {
+    color: #354463;
+    font-family:  Helvetica, sans-serif;
+    font-size: 1.75rem;
+    width: 50%;
+}
+
+.main-header__nav {
+    display: inline-block;
+    grid-area: nav;
+    align-self: center;
+}
+
+.main-header__nav-items {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.main-header__nav-item {
+    margin: 1rem 0 1rem 0;
+}
+
+.main-header__nav-item a {
+    text-decoration: none;
+    color: #354463;
+    font-weight: lighter;
+}
+
+.main-header__donate-actions {
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    width: 100%;
+    grid-column: span 2;
+}
+
+.main-header__donate-action {
+    display: block;
+    background-color: #C1F7D5;
+    color: #354463;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5rem;
+    padding: 0.5rem;
+}
+
+/*********************** SECTION 1 ****************************/
+
+.main-content__issue {
+    background-image: url(../assets/home/annie-spratt-135307-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 80%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.main-content__title {
+    display: inline-block;
+    font-family: 'Flood';
+    font-size: 3rem;
+    color: #ffffff;
+    margin: 2rem;
+    width: 50%;
+}
+
+.main-content__card {
+    background-color: #ffffff;
+    padding: 2rem 1rem 2rem 1rem;
+    margin: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.main-content__card-title {
+    display: inline-block;
+    background-color: #354463;
+    color: #ffffff;
+    padding: 1rem;
+    position: absolute;
+    top: -2.5rem;
+    right: calc(50% - 3.7rem);
+}
+
+.main-content__card-link {
+    display: inline-block;
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+.main-content__take-action {
+    background-color: #C1F7D5;
+    position: relative;
+}
+
+.main-content__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem 2rem;
+    grid-gap: 1rem 1rem;
+}
+
+.main-content__item {
+    display: inline-block;
+}
+
+.main-content__item h3,
+.main-content__item p {
+    color: #354463;
+    display: inline-block;
+    margin: 0.25rem;
+}
+
+.main-content__item p {
+    font-weight: lighter;
+}
+
+/*********************** SECTION 2 *****************************/
+
+.what-we-do {
+    background-color: #354463;
+    text-align: center;
+    color: #ffffff;
+    padding: 1.5rem 1.5rem 1rem 1.5rem;
+}
+
+.what-we-do__title h2 {
+    margin: 0 auto 0 auto;
+    background-color: #ffffff;
+    color: #354463;
+    padding: 1rem;
+    font-size: 1rem;
+    width: 35%;
+    font-weight: normal;
+}
+
+.what-we-do__title p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.what-we-do__card {
+    margin: 5rem 1rem 1rem 1rem;
+    background-color: #ffffff;
+    color: #354463;
+    text-align: center;
+    padding: 0 2rem 2rem 2rem;
+}
+
+.what-we-do__card-image {
+    display: inline-block;
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    position: relative;
+    top: -2.5rem;
+}
+
+.what-we-do__card-title {
+    margin: 0 0 1rem 0;
+}
+
+.what-we-do__card-desc {
+    margin: 0 0 2rem 0;
+}
+
+.what-we-do__card-link {
+    text-decoration: none;
+    color: #354463;
+    padding: 1rem;
+    background-color: #C1F7D5;
+    border-radius: 5rem;
+    font-weight: bold;
+    display: inline-block;
+    width: 35%;
+}
+
+/************************ SECTION 3 *****************************/
+
+.did-you-know {
+    background-image: url('../assets/home/did-you-know-background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+}
+
+.did-you-know__title {
+    font-family: Flood;
+    color: #ffffff;
+    font-size: 3rem;
+    display: inline-block;
+    width: 80%;
+}
+
+.did-you-know__take-action {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: #C1F7D5;
+    color: #354463;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+
+.did-you-know__cards {
+    text-align: center;
+}
+
+.did-you-know__cards > h3 {
+    display: inline-block;
+    background-color: #354463;
+    color: #ffffff;
+    width: 40%;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    position: relative;
+    top: 3rem;
+}
+
+.did-you-know__card {
+    color: #354463;
+    background-color: #ffffff;
+    padding: 1.5rem 2rem 1.5rem 2rem;
+    margin: 1rem;
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+}
+
+.did-you-know__info {
+    text-align: left;
+    display: inline-block;
+}
+
+.did-you-know__socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 1rem;
+}
+
+.did-you-know__socials a {
+    background-color: #C1F7D5;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.did-you-know__twitter,
+.did-you-know__facebook {
+    display: inline-block;
+    height: 2rem;
+    width: 2rem;
+    background-image: url("../assets/home/iconmonstr-twitter-1@2x.png");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+}
+
+.did-you-know__facebook {
+    background-image: url("../assets/home/iconmonstr-facebook-1@2x.png");
+}
+
+/*********************** SECTION ******************************/
+
+.people-stories {
+    display: flex;
+    text-align: center;
+    padding-bottom: 2rem;
+    align-items: center;
+    flex-direction: column;
+}
+
+.people-stories__title {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #354463;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: normal;
+    position: relative;
+    top: 2.5rem;
+}
+
+.people-stories__image {
+    width: 80%;
+}
+
+.people-stories__story {
+    display: inline-block;
+    width: 67%;
+    background-color: #354463;
+    color: #ffffff;
+    padding: 2rem;
+    margin: 2rem auto 2rem auto;
+}
+
+.people-stories__quote {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.people-stories__person-info {
+    font-weight: lighter;
+    font-size: 0.75rem;
+}
+
+.people-stories__link {
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    background-color: #C1F7D5;
+    font-weight: bold;
+    color: #354463;
+    border-radius: 10rem;
+}
+
+/*********************** SECTION ******************************/
+
+.latest-happenings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 3rem 2rem 3rem;
+    background-color: #354463;
+}
+
+.latest-happenings__title {
+    display: inline-block;
+    color: #ffffff;
+    font-family: Flood;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.latest-happenings__event div,
+.latest-happenings__news div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0 1rem 0;
+}
+
+.latest-happenings__subtitle {
+    display: inline-block;
+    padding: 0.75rem 2rem 0.75rem 2rem;
+    background-color: #ffffff;
+    color: #354463;
+    position: relative;
+    top: 2.5rem;
+}
+
+.latest-happenings__heading {
+    color: #ffffff;
+    width: 80%;
+    text-align: center;
+}
+
+.latest-happenings__desc {
+    color: #cccccc;
+    margin-bottom: 2rem;
+    width: 80%;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.latest-happenings__image {
+    width: 90%;
+}
+
+.latest-happenings__link {
+    text-decoration: none;
+    color: #354463;
+    background-color: #C1F7D5;
+    padding: 1rem 2rem;
+    border-radius: 10rem;
+    font-weight: bold;
+}
+
+/*********************** SECTION ******************************/
+
+.subscribe {
+    background-color: #C1F7D5;
+    padding: 1rem 2rem 2rem 2rem;
+}
+
+.subscribe h3 {
+    font-size: 1.5rem;
+    color: #354463;
+}
+
+.subscribe__form {
+    text-align: center;
+}
+
+.subscribe__form--email {
+    text-decoration: none;
+    color: #354463;
+    font-weight: lighter;
+    font-size: 1rem;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+}
+
+.subscribe__form--submit {
+    border: none;
+    color: #C1F7D5;
+    background-color: #354463;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10rem;
+}
+
+/*********************** FOOTER *******************************/
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 13rem 13rem 1fr;
+    grid-template-areas: "brand contact"
+                         "follow learn"
+                         "empty stop";
+    padding: 2rem 3rem 1rem 3rem;
+}
+
+.footer-section__brand {
+    color: #354463;
+    grid-area: brand;
+    width: 60%;
+}
+
+.footer-section__contact-info {
+    grid-area: contact;
+    width: 80%;
+    line-height: 1.75rem;
+}
+
+.footer-section__social-info {
+    grid-area: follow;
+}
+
+.footer-section__title {
+    color: #354463;
+    font-weight: bold;
+    font-family: Flood;
+    grid-area: stop;
+    text-align: right;
+    font-size: 3rem;
+}
+
+.footer-section__learn-more {
+    grid-area: learn;
+}
+
+.footer-section__empty {
+    grid-area: empty;
+}
+
+.footer-section__info a {
+    text-decoration: none;
+    color: #00000029;
+    text-decoration: underline;
+}
+
+.footer-section__info-title {
+    font-size: 1rem;
+    color: #354463;
+    font-weight: normal;
+}
+
+.footer-section__link {
+    color: #354463;
+}
+
+/*********************** TABLET **************************/
+
+@media (min-width: 54rem) {
+    /***************** HEADER **************************/
+    .main-header {
+        grid-template-areas: "head head button"
+                             "nav nav button";
+    }
+
+    .main-header__donate-actions {
+        grid-column: auto;
+        grid-row: span 2;
+    }
+
+    .main-header__donate-action {
+        display: inline-block;
+        padding: 0.5rem 2rem;
+    }
+
+    .main-header__nav-items {
+        margin: 0 0 1rem 0;
+    }
+
+    .main-header__nav-item {
+        display: inline;
+        margin: 0 2rem 0 0;
+    }
+
+    /***************** CONTENT **********************/
+
+    .main-content__item {
+        width: 80%;
+    }
+}
+
+/********************* DESKTOP ************************/

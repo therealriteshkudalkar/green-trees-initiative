@@ -1,0 +1,131 @@
+@font-face {
+    font-family: Flood;
+    src: url("../fonts/Flood\ Std\ Regular.otf") format("opentype");
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/*********************** HEADER *******************/
+
+.main-header {
+    text-align: center;
+    padding: 1rem;
+}
+
+.main-header__brand {
+    display: inline-block;
+    width: 70%;
+    color: #354463;
+    margin: 0;
+}
+
+/*********************** SECTION **********************/
+
+.main-content {
+    background-image: url("../assets/donation/annie-spratt-427340-unsplash@2x.png");
+    background-size: cover;
+    padding: 2rem;
+}
+
+.main-content__title {
+    font-family: Flood;
+    color: #ffffff;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.main-content__form {
+    background-color: #354463;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+
+.main-content__form-title {
+    color: #ffffff;
+}
+
+.main-content__form-text {
+    color: #ffffff;
+}
+
+.main-content__form-submit {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content__button {
+    align-self: center;
+    border: none;
+    background-color: #C1F7D5;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 20rem;
+}
+
+/*********************** FOOTER **********************/
+
+.footer-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 13rem 13rem 1fr;
+    grid-template-areas: "brand contact"
+                         "follow learn"
+                         "empty stop";
+    padding: 2rem 3rem 1rem 3rem;
+}
+
+.footer-section__brand {
+    color: #354463;
+    grid-area: brand;
+    width: 60%;
+}
+
+.footer-section__contact-info {
+    grid-area: contact;
+    width: 80%;
+    line-height: 1.75rem;
+}
+
+.footer-section__social-info {
+    grid-area: follow;
+}
+
+.footer-section__title {
+    color: #354463;
+    font-weight: bold;
+    font-family: Flood;
+    grid-area: stop;
+    text-align: right;
+    font-size: 3rem;
+}
+
+.footer-section__learn-more {
+    grid-area: learn;
+}
+
+.footer-section__empty {
+    grid-area: empty;
+}
+
+.footer-section__info a {
+    text-decoration: none;
+    color: #00000029;
+    text-decoration: underline;
+}
+
+.footer-section__info-title {
+    font-size: 1rem;
+    color: #354463;
+    font-weight: normal;
+}
+
+.footer-section__link {
+    color: #354463;
+}
