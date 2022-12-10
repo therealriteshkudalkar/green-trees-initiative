@@ -459,6 +459,7 @@ body {
                          "follow learn"
                          "empty stop";
     padding: 2rem 3rem 1rem 3rem;
+    column-gap: 2rem;
 }
 
 .footer-section__brand {
@@ -510,7 +511,7 @@ body {
     color: #354463;
 }
 
-/*********************** TABLET **************************/
+/***************************** TABLET ****************************/
 
 @media (min-width: 54rem) {
     /***************** HEADER **************************/
@@ -538,11 +539,36 @@ body {
         margin: 0 2rem 0 0;
     }
 
-    /***************** CONTENT **********************/
+    /***************** CONTENT **************************/
 
     .main-content__item {
         width: 80%;
     }
 }
 
-/********************* DESKTOP ************************/
+/***************************** DESKTOP **************************/
+
+@media (min-width: 60rem) {
+    /***************** HEADER **************************/
+    .main-header {
+        grid-template-areas: "head nav nav button";
+        align-items: center;
+    }
+
+    .main-header__donate-actions {
+        grid-row: auto;
+    }
+
+    .main-header__nav {
+        justify-self: flex-end;
+        grid-column: span 2;
+    }
+
+    .main-header__nav-items {
+        display: flex;
+        margin: 0;
+        justify-content: space-between;
+    }
+
+    /***************** CONTENT **************************/
+}

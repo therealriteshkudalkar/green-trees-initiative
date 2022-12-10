@@ -1,128 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donation</title>
+    <link rel="stylesheet" href="css/donation.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Donation</title>
-  <link rel="stylesheet" href="css/donation.css" />
-</head>
+  <body>
+    <header class="main-header">
+      <h1 class="main-header__brand">The Green Trees Initiatives</h1>
+    </header>
 
-<body>
-  <header class="main-header">
-    <h1 class="main-header__brand">The Green Trees Initiatives</h1>
-  </header>
+    <main>
+      <section class="main-content">
+        <h2 class="main-content__title">GIVE HOPE TO THOSE WHO NEED IT MOST</h2>
+        <form class="main-content__form">
+          <div class="main-content__form-personal">
+            <h3 class="main-content__form-title">Your information</h3>
+            <div class="main-content__form-fname">
+              <label class="main-content__label" for="fname">FIRST NAME</label>
+              <input
+                class="main-content__input"
+                type="text"
+                id="fname"
+                placeholder="First name"
+              />
+            </div>
+            <div class="main-content__form-lname">
+              <label class="main-content__label" for="lname">LAST NAME</label>
+              <input
+                class="main-content__input"
+                type="text"
+                id="lname"
+                placeholder="Last name"
+              />
+            </div>
+            <div class="main-content__form-stad">
+              <label class="main-content__label" for="street-address"
+                >STREET ADDRESS</label
+              >
+              <input
+                class="main-content__input"
+                type="text"
+                id="street-address"
+                placeholder="Street address"
+              />
+            </div>
+            <div class="main-content__form-city">
+              <label class="main-content__label" for="city">CITY</label>
+              <input
+                class="main-content__input"
+                type="text"
+                id="city"
+                placeholder="City"
+              />
+            </div>
+            <div class="main-content__form-state">
+              <label class="main-content__label" for="state">STATE</label>
+              <select class="main-content__selector" id="state">
+                <option value="Alabama">AL</option>
+                <option value="Alaska">AK</option>
+                <option value="Arizona">AZ</option>
+                <option value="Arkansas">AR</option>
+                <option value="California">CA</option>
+                <option value="Colorado">CO</option>
+                <option value="Connecticut">CT</option>
+                <option value="Delaware">DE</option>
+                <option value="Florida">FL</option>
+                <option value="Georgia">GA</option>
+                <option value="Hawaii">HI</option>
+                <option value="Illinois">IL</option>
+                <option value="Idaho">ID</option>
+                <option value="Indiana">IN</option>
+                <option value="Iowa">IA</option>
+                <option value="Kansas">KS</option>
+                <option value="Kentucky">KY</option>
+                <option value="Louisana">LA</option>
+                <option value="Maine">ME</option>
+                <option value="Maryland">MD</option>
+                <option value="Montana">MT</option>
+                <option value="Missouri">MO</option>
+                <option value="Minnesota">MN</option>
+                <option value="Michigan">MI</option>
+                <option value="Nebraska">NE</option>
+                <option value="Nevada">NV</option>
+                <option value="New Hampshire">NH</option>
+                <option value="New Jersey">NJ</option>
+                <option value="New York">NY</option>
+                <option value="New Mexico">NM</option>
+                <option value="North Dakota">ND</option>
+                <option value="North Carolina">NC</option>
+                <option value="South Dakota">SD</option>
+                <option value="Tennessee">TN</option>
+                <option value="Vermont">VT</option>
+                <option value="Virginia">VA</option>
+                <option value="West Virginia">WV</option>
+                <option value="Wisconsin">WI</option>
+                <option value="Wyoming">WY</option>
+              </select>
+            </div>
+            <div class="main-content__form-zip">
+              <label class="main-content__label" for="zip">ZIP CODE</label>
+              <input
+                class="main-content__input"
+                type="text"
+                id="zip"
+                placeholder="Zip"
+              />
+            </div>
+            <div class="main-content__form-email">
+              <label class="main-content__label" for="email"
+                >EMAIL ADDRESS</label
+              >
+              <input
+                class="main-content__input"
+                type="email"
+                id="email"
+                placeholder="Email address"
+              />
+            </div>
+          </div>
+          <div class="main-content__form-payment">
+            <h3 class="main-content__form-title2">Payment information</h3>
+            <div class="main-content__form-card">
+              <label class="main-content__label" for="credit-card-number"
+                >CREDIT CARD NUMBER</label
+              >
+              <input
+                class="main-content__input"
+                type="text"
+                id="credit-card-number"
+                placeholder="Credit card number"
+              />
+            </div>
+            <div class="main-content__form-date">
+              <label
+                class="main-content__label main-content__label--exp"
+                for="credit-card-month"
+                >EXPIRATION DATE</label
+              >
+              <input
+                class="main-content__input main-content__input--spl-1"
+                type="text"
+                id="credit-card-month"
+                placeholder="MM"
+              />
+              <input
+                class="main-content__input main-content__input--spl-2"
+                type="text"
+                id="credit-card-year"
+                placeholder="YYYY"
+              />
+            </div>
+            <div class="main-content__form-code">
+              <label class="main-content__label" for="credit-card-cvc"
+                >SECURITY CODE</label
+              >
+              <input
+                class="main-content__input"
+                type="password"
+                id="credit-card-cvc"
+                placeholder="CVC"
+              />
+            </div>
+          </div>
+          <div class="main-content__form-submit">
+            <h3 class="main-content__form-text">
+              Click the button to confirm your donation of $10, recurring
+              monthly.
+            </h3>
+            <input
+              class="main-content__button"
+              type="submit"
+              value="Process Payment"
+            />
+          </div>
+        </form>
+      </section>
+    </main>
 
-  <main>
-    <section class="main-content">
-      <h2 class="main-content__title">GIVE HOPE TO THOSE WHO NEED IT MOST</h2>
-      <form class="main-content__form">
-        <div class="main-content__form-personal">
-          <h3 class="main-content__form-title">Your information</h3>
-          <label class="main-content__label" for="fname">FIRST NAME</label>
-          <input type="text" id="fname" placeholder="First name">
-          <label class="main-content__label" for="lname">LAST NAME</label>
-          <input type="text" id="lname" placeholder="Last name">
-          <label class="main-content__label" for="street-address">STREET ADDRESS</label>
-          <input type="text" id="street-address" placeholder="Stree address">
-          <label class="main-content__label" for="city">CITY</label>
-          <input type="text" id="city" placeholder="City">
-          <label class="main-content__label" for="state">STATE</label>
-          <select id="state">
-            <option value="Alabama">AL</option>
-            <option value="Alaska">AK</option>
-            <option value="Arizona">AZ</option>
-            <option value="Arkansas">AR</option>
-            <option value="California">CA</option>
-            <option value="Colorado">CO</option>
-            <option value="Connecticut">CT</option>
-            <option value="Delaware">DE</option>
-            <option value="Florida">FL</option>
-            <option value="Georgia">GA</option>
-            <option value="Hawaii">HI</option>
-            <option value="Illinois">IL</option>
-            <option value="Idaho">ID</option>
-            <option value="Indiana">IN</option>
-            <option value="Iowa">IA</option>
-            <option value="Kansas">KS</option>
-            <option value="Kentucky">KY</option>
-            <option value="Louisana">LA</option>
-            <option value="Maine">ME</option>
-            <option value="Maryland">MD</option>
-            <option value="Montana">MT</option>
-            <option value="Missouri">MO</option>
-            <option value="Minnesota">MN</option>
-            <option value="Michigan">MI</option>
-            <option value="Nebraska">NE</option>
-            <option value="Nevada">NV</option>
-            <option value="New Hampshire">NH</option>
-            <option value="New Jersey">NJ</option>
-            <option value="New York">NY</option>
-            <option value="New Mexico">NM</option>
-            <option value="North Dakota">ND</option>
-            <option value="North Carolina">NC</option>
-            <option value="South Dakota">SD</option>
-            <option value="Tennessee">TN</option>
-            <option value="Vermont">VT</option>
-            <option value="Virginia">VA</option>
-            <option value="West Virginia">WV</option>
-            <option value="Wisconsin">WI</option>
-            <option value="Wyoming">WY</option>
-          </select>
-          <label for="zip">ZIP CODE</label>
-          <input type="text" id="zip" placeholder="Zip">
-          <label for="email">EMAIL ADDRESS</label>
-          <input type="email" id="email" placeholder="Email address">
-        </div>
-        <div class="main-content__form-payment">
-          <h3 class="main-content__form-title">Payment information</h3>
-          <label for="credit-card-number">CREDIT CARD NUMBER</label>
-          <input type="text" id="credit-card-number" placeholder="Credit card number">
-          <label for="credit-card-month">EXPIRATION DATE</label>
-          <input type="text" id="credit-card-month" placeholder="MM">
-          <input type="text" id="credit-card-year" placeholder="YYYY">
-          <label for="credit-card-cvc">SECURITY CODE</label>
-          <input type="password" id="credit-card-cvc" placeholder="CVC">
-        </div>
-        <div class="main-content__form-submit">
-          <h3 class="main-content__form-text">
-            Click the button to confirm your donation of $10,
-            recurring monthly.
-          </h3>
-          <input class="main-content__button" type="submit" value="Process Payment">
-        </div>
-      </form>
-    </section>
-  </main>
-
-  <footer class="footer-section">
-    <div class="footer-section__brand">
-      <h2>The Green Trees Initiative</h1>
-    </div>
-    <div>
-      <h1 class="footer-section__title">#STOP CLIMATE CHANGE</h1>
-    </div>
-    <div class="footer-section__contact-info">
-      <h3 class="footer-section__info-title">CONTACT US</h3>
-      <p>123 Anywhere St. Cityname, NY 11206<br>(123) 456-7890<br>contact@npo.org</p>
-    </div>
-    <div class="footer-section__social-info">
-      <h3 class="footer-section__info-title">FOLLOW US</h3>
-      <p><a class="footer-section__link" href="">Facbook</a></p>
-      <p><a class="footer-section__link" href="">Twitter</a></p>
-      <p><a class="footer-section__link" href="">Instagram</a></p>
-      <p><a class="footer-section__link" href="">Medium</a></p>
-    </div>
-    <div class="footer-section__learn-more">
-      <h3 class="footer-section__info-title">LEARN MORE</h3>
-      <p><a class="footer-section__link" href="">The Issue</a></p>
-      <p><a class="footer-section__link" href="">How We Help?</a></p>
-      <p><a class="footer-section__link" href="">Get Involved</a></p>
-      <p><a class="footer-section__link" href="">Latest News</a></p>
-    </div>
-    <div class="footer-section__empty"></div>
-  </footer>
-</body>
-
+    <footer class="footer-section">
+      <div class="footer-section__brand">
+        <h2>The Green Trees Initiative</h2>
+      </div>
+      <div>
+        <h1 class="footer-section__title">#STOP CLIMATE CHANGE</h1>
+      </div>
+      <div class="footer-section__contact-info">
+        <h3 class="footer-section__info-title">CONTACT US</h3>
+        <p>
+          123 Anywhere St. Cityname, NY 11206<br />(123) 456-7890<br />contact@npo.org
+        </p>
+      </div>
+      <div class="footer-section__social-info">
+        <h3 class="footer-section__info-title">FOLLOW US</h3>
+        <p><a class="footer-section__link" href="">Facbook</a></p>
+        <p><a class="footer-section__link" href="">Twitter</a></p>
+        <p><a class="footer-section__link" href="">Instagram</a></p>
+        <p><a class="footer-section__link" href="">Medium</a></p>
+      </div>
+      <div class="footer-section__learn-more">
+        <h3 class="footer-section__info-title">LEARN MORE</h3>
+        <p><a class="footer-section__link" href="#issue">The Issue</a></p>
+        <p>
+          <a class="footer-section__link" href="#what-we-do">How We Help?</a>
+        </p>
+        <p>
+          <a class="footer-section__link" href="./donation.html"
+            >Get Involved</a
+          >
+        </p>
+        <p>
+          <a class="footer-section__link" href="#news-events">Latest News</a>
+        </p>
+      </div>
+      <div class="footer-section__empty"></div>
+    </footer>
+  </body>
 </html>
