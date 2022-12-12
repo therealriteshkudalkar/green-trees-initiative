@@ -120,6 +120,8 @@ body {
     display: inline-block;
     text-decoration: underline;
     margin-top: 1rem;
+    color: #354463;
+    font-weight: lighter;
 }
 
 .main-content__take-action {
@@ -277,18 +279,21 @@ body {
 
 .did-you-know__socials a {
     background-color: #C1F7D5;
-    border-radius: 50%;
-    padding: 0.5rem;
-}
-
-.did-you-know__twitter,
-.did-you-know__facebook {
-    display: inline-block;
-    height: 2rem;
-    width: 2rem;
+    border-radius: 5rem;
+    padding: 0;
+    margin: 0;
+    padding: 1rem;
+    width: 0.5rem;
+    height: 0.5rem;
     background-image: url("../assets/home/iconmonstr-twitter-1@2x.png");
     background-repeat: no-repeat;
-    background-position: 50% 100%;
+    background-position: 50% 50%;
+    background-size: 1.25rem;
+}
+
+.did-you-know__socials a:nth-child(2) {
+    background-image: url("../assets/home/iconmonstr-facebook-1@2x.png");
+    background-size: 0.7rem;
 }
 
 .did-you-know__facebook {
@@ -485,6 +490,7 @@ body {
     grid-area: stop;
     text-align: right;
     font-size: 3rem;
+    justify-self: flex-end;
 }
 
 .footer-section__learn-more {
@@ -518,6 +524,7 @@ body {
     .main-header {
         grid-template-areas: "head head button"
                              "nav nav button";
+        margin: 1rem 4rem;
     }
 
     .main-header__donate-actions {
@@ -544,11 +551,113 @@ body {
     .main-content__item {
         width: 80%;
     }
+
+    .main-content__issue {
+        justify-content: flex-start;
+        padding: 2rem;
+        flex-direction: row;
+        height: inherit;
+        row-gap: 3rem;
+    }
+
+    .main-content__title {
+        width: 25%;
+        margin: 1rem 2rem 1rem 2rem;
+    }
+
+    .main-content__card {
+        padding: 3rem;
+        text-align: left;
+    }
+
+    .main-content__card-title {
+        padding: 1rem 3rem 1rem 3rem;
+        right: 70%;
+    }
+
+    .main-content__card-subtitle {
+        font-size: 2.5rem;
+        color: #354463;
+        margin: 1rem 0 1rem 0;
+    }
+
+    /***************** CONTENT **************************/
+
+    .main-content__card-take-action {
+        right: calc(50% - 5rem);
+    }
+
+    .main-content__container {
+        padding: 5rem;
+    }
+
+    /***************** CONTENT **************************/
+
+    .what-we-do {
+        padding: 3rem 3rem 2rem 3rem;
+    }
+
+    .what-we-do__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1.5fr 1.5fr 1fr;
+        grid-template-areas: "image head"
+                             "image desc"
+                             "link desc";
+        column-gap: 2rem;
+        text-align: left;
+        padding: 0 2rem 1rem 2rem;
+    }
+
+    .what-we-do__card-image {
+        grid-area: image;
+        height: 15rem;
+    }
+
+    .what-we-do__card-title {
+        font-size: 1.5rem;
+        grid-area: head;
+        align-self: flex-end;
+        width: 50%;
+        display: inline-block;
+    }
+
+    .what-we-do__card-desc {
+        grid-area: desc;
+        line-height: 2rem;
+        margin: 0;
+    }
+
+    .what-we-do__card-link {
+        grid-area: link;
+        align-self: flex-start;
+        justify-self: flex-end;
+        text-align: center;
+    }
+
+    /***************** CONTENT **************************/
+
+
+    /***************** CONTENT **************************/
+
+    /****************** FOOTER ***************************/
+
+    .footer-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "brand contact follow"
+                             "empty learn stop";
+        row-gap: 2rem;
+    }
+
+    .footer-section__title {
+        text-align: left;
+    }
 }
 
 /***************************** DESKTOP **************************/
 
-@media (min-width: 60rem) {
+@media (min-width: 85rem) {
     /***************** HEADER **************************/
     .main-header {
         grid-template-areas: "head nav nav button";
@@ -562,6 +671,7 @@ body {
     .main-header__nav {
         justify-self: flex-end;
         grid-column: span 2;
+        width: 95%;
     }
 
     .main-header__nav-items {
@@ -571,4 +681,43 @@ body {
     }
 
     /***************** CONTENT **************************/
+
+    .main-content__issue {
+        column-gap: 3rem;
+        padding: 4rem;
+    }
+
+    .main-content__issue > div {
+        order: 1;
+        width: 30%;
+    }
+
+    .main-content__card {
+        width: 45%;
+    }
+
+    .main-content__card-title {
+        right: 65%;
+    }
+
+    /************************ SECTION **************************/
+
+    .main-content__card-take-action {
+        right: calc(50% - 5rem);
+    }
+
+    .main-content__container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 4rem;
+    }
+
+    /************************ FOOTER **************************/
+
+    .footer-section {
+        grid-template-columns: 19% 19% 19% 19%;
+        grid-template-rows: 1fr;
+        grid-template-areas: "brand contact follow learn stop";
+        column-gap: 2rem;
+    }
 }

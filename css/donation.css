@@ -25,9 +25,12 @@ body {
 
 /*********************** SECTION **********************/
 
-.main-content {
+main {
     background-image: url("../assets/donation/annie-spratt-427340-unsplash@2x.png");
     background-size: cover;
+}
+
+.main-content {
     padding: 2rem;
 }
 
@@ -40,7 +43,7 @@ body {
 
 .main-content__form {
     background-color: #354463;
-    padding: 1.5rem;
+    padding: 2rem;
     /* display: flex;
     flex-direction: column;
     row-gap: 2rem; */
@@ -74,6 +77,7 @@ body {
     border: none;
     color: #ffffff;
     border-bottom: 2px solid #C1F7D5;
+    width: 100%;
 }
 
 .main-content__input:focus {
@@ -153,6 +157,7 @@ body {
 
 .main-content__form-payment {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "ti ti"
@@ -210,6 +215,14 @@ body {
     font-size: 1rem;
     font-weight: bold;
     border-radius: 20rem;
+    width: 100%;
+
+}
+
+.main-content__go-back {
+    display: inline-block;
+    color: #C1F7D5;
+    margin-top: 1.5rem;
 }
 
 /*********************** FOOTER **********************/
@@ -272,4 +285,70 @@ body {
 
 .footer-section__link {
     color: #354463;
+}
+
+/*************************** TABLET ***********************/
+
+@media (min-width: 54rem) {
+    .main-content {
+        padding: 3rem;
+    }
+
+    .main-content__form-personal,
+    .main-content__form-payment {
+        column-gap: 3rem;
+    }
+
+    .main-content__form-date {
+        column-gap: 2rem;
+    }
+
+    .main-content__form-submit {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "ttl ttl"
+                             "goback processpay";
+    }
+
+    .main-content__form-text {
+        grid-area: ttl;
+    }
+
+    .main-content__button {
+        grid-area: processpay;
+    }
+
+    .main-content__go-back {
+        grid-area: goback;
+    }
+}
+
+/************************* DESKTOP ***********************/
+
+@media (min-width: 60rem) {
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content {
+        width: 60%;
+        display: flex;
+        column-gap: 4rem;
+        justify-content: center;
+        padding-bottom: 6rem;
+    }
+
+    .main-content__title {
+        font-size: 3rem;
+        order: 1;
+        display: inline-block;
+        width: 40%;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .main-content__form {
+        padding: 4rem;
+    }
 }
