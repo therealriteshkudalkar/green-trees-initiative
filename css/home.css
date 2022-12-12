@@ -595,6 +595,17 @@ body {
 
     .what-we-do {
         padding: 3rem 3rem 2rem 3rem;
+        text-align: left;
+    }
+
+    .what-we-do__title h2 {
+        margin: 0;
+        width: 15%;
+        text-align: center;
+    }
+
+    .what-we-do__title p {
+        font-size: 2rem;
     }
 
     .what-we-do__card {
@@ -633,6 +644,8 @@ body {
         align-self: flex-start;
         justify-self: flex-end;
         text-align: center;
+        padding: 0.75rem;
+        width: 50%;
     }
 
     /***************** CONTENT **************************/
