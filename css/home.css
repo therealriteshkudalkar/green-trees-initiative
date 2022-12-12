@@ -725,6 +725,50 @@ body {
         padding: 4rem;
     }
 
+    /************************ SECTION **************************/
+    .what-we-do__title {
+        width: 80%;
+        margin: auto;
+    }
+
+    .what-we-do__title p {
+        font-size: 3rem;
+    }
+
+    .what-we-do__cards {
+        display: flex;
+        column-gap: 4rem;
+        width: 80%;
+        margin: auto;
+    }
+
+    .what-we-do__card {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "image" 
+                             "head"
+                             "desc"
+                             "link";
+        padding: 0 0 2rem 0;
+    }
+
+    .what-we-do__card-image {
+        top: -2.5rem;
+        right: -2.5rem;
+    }
+
+    .what-we-do__card-title {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .what-we-do__card-desc {
+        margin: 0 2rem 2rem 2rem;
+    }
+
+    .what-we-do__card-link {
+        justify-self: center;
+    }
+
     /************************ FOOTER **************************/
 
     .footer-section {
